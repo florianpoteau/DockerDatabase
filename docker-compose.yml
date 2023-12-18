@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  netstream:
+    image: postgres:16.1-bullseye
+    container_name: netstream
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "9255:5432"
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+volumes:
+  postgresdata:
+    driver: local
