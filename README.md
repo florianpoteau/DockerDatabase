@@ -12,6 +12,28 @@ Dans ce repositorie, il y aura:
 <ul>L'environnement Docker</ul>
 <ul>Le jeu de requetes</ul>
 
+## Initialisation
+
+Pour tester le projet,
+
+<li>initialiser docker avec docker-compose.yml</li>
+<li>importer la base de donnée dans le fichier database.json</li>
+<li>Créer un fichier .env comme ci dessous: et remplacer les valeurs par vos informations de base de données</li>
+
+```env
+POSTGRES_USER=user
+POSTGRES_PASSWORD=psw
+POSTGRES_DB=db
+```
+
+Si vous modifier votre variable POSTGRES_USER, vous devrez modifier aussi le fichier database.json pour le username comme ci-dessous, n'oubliez pas de changer "user" par votre nom d'utilisateur du .env.
+
+```json
+{
+  "Username": "user"
+}
+```
+
 ## Docker
 
 Tout d'abord, j'ai créé un fichier 'docker-compose.yml', j'y ai ajouté les informations de la base de données, et j'ai sécurisé les informations confidentiels de la base de données en créant un fichier .env.
@@ -30,7 +52,7 @@ Ensuite avec pgadmin j'ai créer un serveur qui contenait les informations de mo
 
 Vous trouverez via ce repo. Un fichier database.json de ma base de donnée exporté, il vous suffit d'importer ma base de donnée <strong>Postgresql</strong>.
 
-si vous souhaiter importer la base de données, vous aurez un nouvel utilisateur qui aura pour role le role "admin" lui permettant de selectionner, modifier, supprimer ou créer une table
+Si vous souhaiter importer la base de données, vous aurez un nouvel utilisateur qui aura pour role le role "admin" lui permettant de selectionner, modifier, supprimer ou créer une table.
 
 ## Requêtes SQL
 
