@@ -8,7 +8,7 @@ Dans ce repositorie, il y aura:
 <ul>Le MCD (Modèle conceptuel de donnée)</ul>
 <ul>Le MLD (Modèle logique de donnée)</ul>
 <ul>Le MPD (Modèle physique de donnée)</ul>
-<ul>Un fichier permettant de générer la base de données(incluant quelques données)
+<ul>Un fichier permettant de générer la base de données(incluant quelques données)</ul>
 <ul>L'environnement Docker</ul>
 <ul>Le jeu de requetes</ul>
 
@@ -25,6 +25,12 @@ docker compose up
 ```
 
 Ensuite avec pgadmin j'ai créer un serveur qui contenait les informations de mon fichier docker-compose.yml et du .env.
+
+## Base de données
+
+Vous trouverez via ce repo. Un fichier database.json de ma base de donnée exporté, il vous suffit d'importer ma base de donnée <strong>Postgresql</strong>.
+
+si vous souhaiter importer la base de données, vous aurez un nouvel utilisateur qui aura pour role le role "admin" lui permettant de selectionner, modifier, supprimer ou créer une table
 
 ## Requêtes SQL
 
