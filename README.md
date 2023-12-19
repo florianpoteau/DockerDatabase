@@ -4,21 +4,25 @@ L'objectif du projet étant d'utiliser Docker pour l'initialisation d'une base d
 Dans ce Read-me, il y aura la façon dont j'ai utiliser Docker, la base de donnée exportée, ainsi que quelques requêtes SQL demandées lors de cet exercice.
 Dans ce repositorie, il y aura:
 
-<ul>Le dictionnaire de donnée</ul>
-<ul>Le MCD (Modèle conceptuel de donnée)</ul>
-<ul>Le MLD (Modèle logique de donnée)</ul>
-<ul>Le MPD (Modèle physique de donnée)</ul>
-<ul>Un fichier permettant de générer la base de données(incluant quelques données)</ul>
-<ul>L'environnement Docker</ul>
-<ul>Le jeu de requetes</ul>
+<ul>
+<li>Le dictionnaire de donnée</li>
+<li>Le MCD (Modèle conceptuel de donnée)</li>
+<li>Le MLD (Modèle logique de donnée)</li>
+<li>Le MPD (Modèle physique de donnée)</li>
+<li>Un fichier permettant de générer la base de données(incluant quelques données)</li>
+<li>L'environnement Docker</li>
+<li>Le jeu de requetes</li>
+</ul>
 
 ## Initialisation
 
 Pour tester le projet,
 
+<ul>
 <li>initialiser docker avec docker-compose.yml</li>
 <li>importer la base de donnée dans le fichier database.json</li>
 <li>Créer un fichier .env comme ci dessous: et remplacer les valeurs par vos informations de base de données</li>
+</ul>
 
 ```env
 POSTGRES_USER=username
