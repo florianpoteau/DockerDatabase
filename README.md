@@ -11,7 +11,7 @@ Dans ce repositorie, il y aura:
 <li>Le MPD (Modèle physique de donnée)</li>
 <li>Un fichier permettant de générer la base de données(incluant quelques données)</li>
 <li>L'environnement Docker</li>
-<li>Le jeu de requetes</li>
+<li>Le jeu de requetes (a la fin de ce read-me)</li>
 </ul>
 
 ## Initialisation
@@ -137,4 +137,30 @@ SELECT nom, prenom
 FROM "Actor"
 ORDER BY id DESC
 LIMIT 3;
+```
+
+## Information complémentaire
+
+Voici mon trigger qui m'a permis de faire une insertion dans la table 'userarchive' après mise a jour d'un utilisateur de la table 'User'.
+
+```sql
+CREATE OR REPLACE FUNCTION user_update_trigger_function()
+RETURNS TRIGGER AS $$
+BEGIN
+IF TG_TABLE_NAME = 'User' THEN
+INSERT INTO UserArchive (user_id, operation_type, old_data, new_data, datecreation)
+VALUES (NEW.id, 'update', row_to_json(OLD), row_to_json(NEW), OLD.datecreation);
+END IF;
+
+    RETURN NEW;
+
+END;
+
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER user_update_trigger
+BEFORE UPDATE ON "User"
+FOR EACH ROW
+EXECUTE FUNCTION user_update_trigger_function();
 ```
