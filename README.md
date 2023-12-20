@@ -11,7 +11,7 @@ Dans ce repositorie, il y aura:
 <li>Le MPD (Modèle physique de donnée)</li>
 <li>Un fichier permettant de générer la base de données(incluant quelques données)</li>
 <li>L'environnement Docker</li>
-<li>Le jeu de requetes</li>
+<li>Le jeu de requetes (a la fin de ce read-me)</li>
 </ul>
 
 ## Initialisation
@@ -25,17 +25,9 @@ Pour tester le projet,
 </ul>
 
 ```env
-POSTGRES_USER=username
-POSTGRES_PASSWORD=psw
+POSTGRES_USER=""
+POSTGRES_PASSWORD=""
 POSTGRES_DB=db
-```
-
-Si vous modifier votre variable POSTGRES_USER, vous devrez modifier aussi le fichier database.json pour le username comme ci-dessous, n'oubliez pas de changer "username" par votre nom d'utilisateur du .env.
-
-```json
-{
-  "Username": "username"
-}
 ```
 
 ## Docker

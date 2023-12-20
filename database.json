@@ -6,7 +6,7 @@
             "Host": "localhost",
             "Port": 9255,
             "MaintenanceDB": "postgres",
-            "Username": "user",
+            "Username": "client",
             "SSLMode": "prefer",
             "SSLCompression": 0,
             "Timeout": 10,
