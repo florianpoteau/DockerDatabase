@@ -25,17 +25,9 @@ Pour tester le projet,
 </ul>
 
 ```env
-POSTGRES_USER=username
-POSTGRES_PASSWORD=psw
+POSTGRES_USER=""
+POSTGRES_PASSWORD=""
 POSTGRES_DB=db
-```
-
-Si vous modifier votre variable POSTGRES_USER, vous devrez modifier aussi le fichier database.json pour le username comme ci-dessous, n'oubliez pas de changer "username" par votre nom d'utilisateur du .env.
-
-```json
-{
-  "Username": "username"
-}
 ```
 
 ## Docker
