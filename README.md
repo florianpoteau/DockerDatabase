@@ -16,19 +16,29 @@ Dans ce repositorie, il y aura:
 
 ## Initialisation
 
-Pour tester le projet,
-
-<ul>
-<li>initialiser docker avec docker-compose.yml</li>
-<li>importer la base de donnée dans le fichier database.json</li>
-<li>Créer un fichier .env comme ci dessous: et remplacer les valeurs par vos informations de base de données</li>
-</ul>
+Pour tester le projet, il vous faut télécharger le fichier docker-compose.yml ainsi que backup.sql.
+Créer un fichier .env comme ci dessous et remplacer les valeurs par vos informations de base de données.
 
 ```env
 POSTGRES_USER=""
 POSTGRES_PASSWORD=""
 POSTGRES_DB=db
 ```
+
+Puis faites en ligne de commande:
+
+```bash
+docker compose up
+```
+
+pour lancer le conteneur définit dans le fichier docker-compose.yml.
+Ensuite faites:
+
+```bash
+docker exec -i "nom du conteneur" psql -U "utilisateur" -d "nom de la base de donnees" < backup.sql
+```
+
+Veillez à modifier la ligne de commande selon votre configuration.
 
 ## Docker
 
