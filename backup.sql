@@ -2,7 +2,7 @@
 -- PostgreSQL database cluster dump
 --
 
--- Started on 2023-12-20 17:48:02
+-- Started on 2023-12-21 15:42:30
 
 SET default_transaction_read_only = off;
 
@@ -19,8 +19,6 @@ CREATE ROLE client;
 ALTER ROLE client WITH NOSUPERUSER INHERIT NOCREATEROLE NOCREATEDB LOGIN NOREPLICATION NOBYPASSRLS PASSWORD 'SCRAM-SHA-256$4096:1jkqzIw0vFT3zyGDuEbeMg==$JinjGL1dj10s/AH5PpcjcXsD0NIGuKXX/czO9Hwy6bM=:VyoyTuGkpuXlJPDIN0jELYC0IsNwgCByWE2fKwD+vT0=';
 CREATE ROLE customer;
 ALTER ROLE customer WITH NOSUPERUSER INHERIT NOCREATEROLE NOCREATEDB NOLOGIN NOREPLICATION NOBYPASSRLS;
-CREATE ROLE "user";
-ALTER ROLE "user" WITH SUPERUSER INHERIT CREATEROLE CREATEDB LOGIN REPLICATION BYPASSRLS PASSWORD 'SCRAM-SHA-256$4096:n5xWzQ5UCLT8gjW8AwCIoQ==$ZgNvF87ZcDZuSKuY04kZM6EyuMmEvi79mVztymzJ1GU=:bUbzbzu4n5dwyxq+KFonGWLeLm5s45+ddo7sRi27Rac=';
 
 --
 -- User Configurations
@@ -55,7 +53,7 @@ GRANT client TO customer WITH INHERIT TRUE GRANTED BY "user";
 -- Dumped from database version 16.1 (Debian 16.1-1.pgdg110+1)
 -- Dumped by pg_dump version 16.1
 
--- Started on 2023-12-20 17:48:02
+-- Started on 2023-12-21 15:42:30
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -68,7 +66,7 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
--- Completed on 2023-12-20 17:48:03
+-- Completed on 2023-12-21 15:42:31
 
 --
 -- PostgreSQL database dump complete
@@ -85,7 +83,7 @@ SET row_security = off;
 -- Dumped from database version 16.1 (Debian 16.1-1.pgdg110+1)
 -- Dumped by pg_dump version 16.1
 
--- Started on 2023-12-20 17:48:03
+-- Started on 2023-12-21 15:42:31
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -102,9 +100,6 @@ SET row_security = off;
 -- TOC entry 3494 (class 1262 OID 16384)
 -- Name: netstream; Type: DATABASE; Schema: -; Owner: user
 --
-
-CREATE DATABASE netstream WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.utf8';
-
 
 ALTER DATABASE netstream OWNER TO "user";
 
@@ -796,7 +791,7 @@ GRANT SELECT ON TABLE public."User" TO client;
 GRANT SELECT,UPDATE ON SEQUENCE public.userarchive_archive_id_seq TO admin;
 
 
--- Completed on 2023-12-20 17:48:03
+-- Completed on 2023-12-21 15:42:31
 
 --
 -- PostgreSQL database dump complete
@@ -815,7 +810,7 @@ GRANT SELECT,UPDATE ON SEQUENCE public.userarchive_archive_id_seq TO admin;
 -- Dumped from database version 16.1 (Debian 16.1-1.pgdg110+1)
 -- Dumped by pg_dump version 16.1
 
--- Started on 2023-12-20 17:48:03
+-- Started on 2023-12-21 15:42:31
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -828,13 +823,13 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
--- Completed on 2023-12-20 17:48:03
+-- Completed on 2023-12-21 15:42:31
 
 --
 -- PostgreSQL database dump complete
 --
 
--- Completed on 2023-12-20 17:48:03
+-- Completed on 2023-12-21 15:42:31
 
 --
 -- PostgreSQL database cluster dump complete
