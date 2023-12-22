@@ -47,14 +47,6 @@ Pour créer mon conteneur Docker j'ai fait en ligne de commande:
 docker compose up
 ```
 
-Ensuite avec pgadmin j'ai créer un serveur qui contenait les informations de mon fichier docker-compose.yml et du .env.
-
-## Base de données
-
-Vous trouverez via ce repo. Un fichier database.json de ma base de donnée exporté, il vous suffit d'importer ma base de donnée <strong>Postgresql</strong>.
-
-Si vous souhaiter importer la base de données, vous aurez un nouvel utilisateur qui aura pour role le role "admin" lui permettant de selectionner, modifier, supprimer ou créer une table.
-
 ## Requêtes SQL
 
 Les titres et dates de sortie des films du plus récent au moins récent:
