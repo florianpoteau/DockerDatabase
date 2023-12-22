@@ -12,7 +12,7 @@ Dans ce repositorie, il y aura:
 <li>Un fichier permettant de générer la base de données(incluant quelques données)</li>
 <li>L'environnement Docker</li>
 <li>Le jeu de requetes (a la fin de ce read-me)</li>
-<li>Un aperçu de la grille d'évaluation sur ce lien: [Grille d'évaluation](https://docs.google.com/spreadsheets/d/1QPXHUMma6DOoxAY7KJPicHG-ojIo9UPbejr1yqDDCjo/edit#gid=0)</li>
+<li>Un aperçu de la grille d'évaluation sur ce <a href= "https://docs.google.com/spreadsheets/d/1QPXHUMma6DOoxAY7KJPicHG-ojIo9UPbejr1yqDDCjo/edit#gid=0">lien</a></li>
 </ul>
 
 ## Initialisation
