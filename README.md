@@ -20,8 +20,8 @@ Pour tester le projet, il vous faut télécharger le fichier docker-compose.yml 
 Créer un fichier .env comme ci dessous
 
 ```env
-POSTGRES_USER="client"
-POSTGRES_PASSWORD="password"
+POSTGRES_USER=client
+POSTGRES_PASSWORD=password
 POSTGRES_DB=db
 ```
 
@@ -46,14 +46,6 @@ Pour créer mon conteneur Docker j'ai fait en ligne de commande:
 ```bash
 docker compose up
 ```
-
-Ensuite avec pgadmin j'ai créer un serveur qui contenait les informations de mon fichier docker-compose.yml et du .env.
-
-## Base de données
-
-Vous trouverez via ce repo. Un fichier database.json de ma base de donnée exporté, il vous suffit d'importer ma base de donnée <strong>Postgresql</strong>.
-
-Si vous souhaiter importer la base de données, vous aurez un nouvel utilisateur qui aura pour role le role "admin" lui permettant de selectionner, modifier, supprimer ou créer une table.
 
 ## Requêtes SQL
 
