@@ -35,8 +35,6 @@ Une fois le fichier .env créé, vous pouvez taper en ligne de commande:
 docker compose up
 ```
 
-Veillez à modifier la ligne de commande selon votre configuration.
-
 ## Docker
 
 Tout d'abord, j'ai créé un fichier 'docker-compose.yml', j'y ai ajouté les informations de la base de données, et j'ai sécurisé les informations confidentiels de la base de données en créant un fichier .env.
