@@ -101,6 +101,8 @@ SET row_security = off;
 -- Name: netstream; Type: DATABASE; Schema: -; Owner: user
 --
 
+CREATE DATABASE netstream WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'en_US.utf8';
+
 ALTER DATABASE netstream OWNER TO "user";
 
 \connect netstream
