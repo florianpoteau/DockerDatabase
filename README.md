@@ -21,7 +21,7 @@ Pour tester le projet, il vous faut télécharger le fichier docker-compose.yml 
 Créer un fichier .env comme ci dessous
 
 ```env
-POSTGRES_USER=client
+POSTGRES_USER=user
 POSTGRES_PASSWORD=password
 POSTGRES_DB=db
 ```
